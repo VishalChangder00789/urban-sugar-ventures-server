@@ -25,10 +25,12 @@ app.post("/send-email", (req, res) => {
     from: email,
     to: "changdervishal1999.official@gmail.com",
     subject: enqSubject,
-    text: `${message}  
+    text: `Hello, My name is ${name}, 
+    ${message}  
 
     Thanks and Regards,
-    ${name}.
+    Name : ${name}.
+    Email : ${email}.
     `,
   };
 
