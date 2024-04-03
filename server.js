@@ -11,19 +11,17 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "changdervishal1999.official@gmail.com",
-    pass: "rfiy mdwi spam xqgu",
+    user: "director1.urbansugar@gmail.com",
+    pass: "uxcl peka uqex xtgi",
   },
 });
 
 app.post("/send-email", (req, res) => {
-  console.log(req.body);
-
   const { email, name, enqSubject, message } = req.body;
 
   const mailOptions = {
     from: email,
-    to: "changdervishal1999.official@gmail.com",
+    to: "director1.urbansugar@gmail.com",
     subject: enqSubject,
     text: `Hello, My name is ${name}, 
     ${message}  
